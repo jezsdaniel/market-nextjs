@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  @apply text-neutral-700;
+}
+
+button {
+  @apply focus:outline-none;
+}
+
+input {
+  @apply focus:outline-none;
+}
