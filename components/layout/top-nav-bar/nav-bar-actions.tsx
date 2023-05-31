@@ -4,7 +4,7 @@ import { UilUserSquare, UilShoppingCart } from '@iconscout/react-unicons';
 
 export const NavBarActions = () => {
   return (
-    <div className="flex flex-row items-center space-x-6">
+    <div className="flex flex-row items-center space-x-2 lg:space-x-6">
       <button
         type="button"
         className="flex relative items-center justify-center w-10 h-10 rounded-full hover:bg-neutral-200"
@@ -17,7 +17,7 @@ export const NavBarActions = () => {
       </button>
       <div className="flex flex-row items-center space-x-3">
         <UilUserSquare className="fill-neutral-700" size={24} />
-        <div className="flex flex-col items-start">
+        <div className="hidden sm:flex flex-col items-start">
           <span className="inline-block text-xs font-medium whitespace-nowrap">
             <Link className="hover:underline" href="/sign-in">
               Iniciar sesión
