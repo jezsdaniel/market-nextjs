@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import { UilAlignLeft } from '@iconscout/react-unicons';
 
 import { FressLogoText } from '@/components/icons';
 
@@ -8,6 +7,7 @@ import { LocationSelector } from './location-selector';
 import { SearchInput } from './search-input';
 import { NavBarActions } from './nav-bar-actions';
 import { NavBarBottom } from './nav-bar-bottom';
+import { MobileMenu } from './mobile-menu';
 
 export const TopNavBar = () => {
   return (
@@ -25,13 +25,7 @@ export const TopNavBar = () => {
       </nav>
       <nav className="flex lg:hidden flex-col w-full p-4 space-y-4">
         <div className="flex flex-row items-center justify-between space-x-6">
-          <button
-            type="button"
-            className="flex relative items-center justify-center w-10 h-10 rounded-full hover:bg-neutral-200"
-          >
-            <UilAlignLeft className="fill-neutral-700" size={24} />
-            <span className="sr-only">Menú</span>
-          </button>
+          <MobileMenu />
           <Link href="/" aria-label="Inicio">
             <FressLogoText className="h-7" />
           </Link>
