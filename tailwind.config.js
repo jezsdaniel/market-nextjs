@@ -20,6 +20,7 @@ module.exports = {
           50: '#FFFFFF',
           100: '#FAFAFA',
           300: '#CCCCCC',
+          500: '#999999',
           600: '#666666',
           700: '#333333',
           900: '#1A1A1A',
@@ -37,6 +38,9 @@ module.exports = {
           700: '#2A6083',
         },
       },
+      dropShadow: {
+        'xl': '0px 20px 40px rgba(65, 50, 88, 0.08)',
+      }
     },
   },
   plugins: [],

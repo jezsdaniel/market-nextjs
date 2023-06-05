@@ -12,7 +12,7 @@ import { MobileMenu } from './mobile-menu';
 export const TopNavBar = () => {
   return (
     <>
-      <nav className="hidden lg:flex flex-col max-w-7xl w-full p-6 space-y-4">
+      <nav className="hidden lg:flex flex-col max-w-8xl w-full p-6 space-y-4">
         <div className="flex flex-row items-center justify-between space-x-6">
           <Link href="/" aria-label="Inicio">
             <FressLogoText className="h-10" />
