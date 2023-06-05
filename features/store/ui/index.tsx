@@ -48,7 +48,8 @@ export const StoreUI = () => {
         ]}
       />
       <ProductsCarousel
-        title="🥑 Alimentos Naturales "
+        title="🥑 Alimentos Naturales"
+        showMore
         products={[
           {
             isNew: false,
@@ -79,6 +80,7 @@ export const StoreUI = () => {
       />
       <ProductsCarousel
         title="🧼 Aseo"
+        showMore
         products={[
           {
             isNew: false,
