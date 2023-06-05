@@ -1,14 +1,15 @@
 import React from 'react';
 
-import { StoreHomeBanner } from './banner';
-import { StoreStats } from './stats';
-import { ProductsCarousel } from './products-carousel';
+import { StoreHomeBanner } from './banners/home-banner';
+import { StoreStats } from './banners/stats';
+import { ProductsCarousel } from './carousel';
 
 import sampleFood1 from 'public/img/samples/sample-food-1.png';
 import sampleFood2 from 'public/img/samples/sample-food-2.png';
 import sampleFood3 from 'public/img/samples/sample-food-3.png';
 import sampleFood4 from 'public/img/samples/sample-food-4.png';
 import sampleFood5 from 'public/img/samples/sample-food-5.png';
+import { StoreSecondBanner } from './banners/second-banner';
 
 export const StoreUI = () => {
   return (
@@ -47,6 +48,7 @@ export const StoreUI = () => {
           },
         ]}
       />
+      {/* <StoreSecondBanner /> */}
       <ProductsCarousel
         title="🥑 Alimentos Naturales"
         showMore
