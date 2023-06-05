@@ -107,6 +107,22 @@ export const StoreUI = () => {
             image: sampleFood5,
             price: 179,
           },
+          {
+            isNew: false,
+            image: sampleFood3,
+            price: 179,
+          },
+          {
+            isNew: true,
+            image: sampleFood4,
+            price: 179,
+            discountPrice: 149,
+          },
+          {
+            isNew: false,
+            image: sampleFood5,
+            price: 179,
+          },
         ]}
       />
     </div>

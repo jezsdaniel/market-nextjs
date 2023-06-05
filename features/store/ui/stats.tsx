@@ -2,7 +2,7 @@ import React from 'react';
 
 export const StoreStats = () => {
   return (
-    <div className="flex flex-row w-full items-center justify-start lg:justify-center space-x-10 md:space-x-20 py-8 px-4 overflow-x-auto">
+    <div className="flex flex-row w-full items-center justify-start lg:justify-center space-x-10 md:space-x-20 py-12 px-4 overflow-x-auto">
       <StoreStatsItem title="12K" line1="usuarios" line2="registrados" />
       <StoreStatsItem title="100" line1="productos" line2="disponibles" />
       <StoreStatsItem title="121K" line1="compras" line2="realizadas" />
