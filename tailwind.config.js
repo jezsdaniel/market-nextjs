@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['var(--font-montserrat)'],
+        display: ['var(--font-oswald)'],
       },
       colors: {
         amber: '#FF961F',

@@ -8,6 +8,12 @@ const montserrat = localFont({
   variable: '--font-montserrat',
 });
 
+const oswald = localFont({
+  src: '../public/fonts/oswald-font.ttf',
+  display: 'swap',
+  variable: '--font-oswald',
+});
+
 export const metadata = {
   title: 'Fress',
   description: 'Tienda virtual Fress',
@@ -15,7 +21,7 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={montserrat.variable}>
+    <html lang="es" className={`${montserrat.variable} ${oswald.variable}`}>
       <body className="bg-neutral-100 min-h-screen">{children}</body>
     </html>
   );
