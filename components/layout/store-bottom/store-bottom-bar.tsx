@@ -7,10 +7,10 @@ import fressLogo from 'public/img/fress.png';
 
 export const StoreBottomBar = () => {
   return (
-    <nav className="flex flex-col md:flex-row w-full items-center md:items-start space-y-8 md:space-y-0 md:space-x-14 px-6 md:px-16 lg:px-24 pt-14 pb-10">
-      <Image src={fressLogo} alt="Fress logo" className="w-28 h-28 md:w-32 md:h-32"/>
+    <nav className="flex flex-col lg:flex-row w-full items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-14 px-6 lg:px-16 lg:px-24 pt-14 pb-10">
+      <Image src={fressLogo} alt="Fress logo" className="w-28 h-28 lg:w-32 lg:h-32"/>
       <div className="grow"/>
-      <div className="flex flex-col space-y-1 items-center text-center md:items-start md:text-start">
+      <div className="flex flex-col space-y-1 items-center text-center lg:items-start lg:text-start">
         <Link href="/" className="font-medium hover:underline">
           Sobre nosotros
         </Link>
@@ -21,7 +21,7 @@ export const StoreBottomBar = () => {
           FAQ&apos;s
         </Link>
       </div>
-      <div className="flex flex-col space-y-1 items-center text-center md:items-start md:text-start">
+      <div className="flex flex-col space-y-1 items-center text-center lg:items-start lg:text-start">
         <span className="font-semibold">Productos</span>
         <Link href="/" className="font-medium hover:underline">
           Alimentos enlatados
@@ -39,7 +39,7 @@ export const StoreBottomBar = () => {
           Limpieza
         </Link>
       </div>
-      <div className="flex flex-col space-y-1 items-center text-center md:items-start md:text-start">
+      <div className="flex flex-col space-y-1 items-center text-center lg:items-start lg:text-start">
         <span className="font-semibold">Otros servicios</span>
         <Link href="/" className="font-medium hover:underline">
           Bonos FRESS
