@@ -62,7 +62,7 @@ export const ProductsCarousel: React.FC<ProductsCarouselProps> = ({
   return (
     <div className="flex flex-col w-full py-4">
       <div className="flex flex-row w-full items-center justify-between space-x-4 px-4 md:px-16 lg:px-24 xl:px-36">
-        <h6 className="text-2xl md:text-3xl font-bold">{title}</h6>
+        <h5 className="text-2xl md:text-3xl font-bold">{title}</h5>
         <div className="hidden md:flex flex-row items-center space-x-4">
           {showMore && (
             <Link

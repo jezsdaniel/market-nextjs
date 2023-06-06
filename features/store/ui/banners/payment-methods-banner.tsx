@@ -12,12 +12,12 @@ import bitcoinLogo from 'public/img/bitcoin-logo.svg';
 export const PaymentMethodsBanner = () => {
   return (
     <div className="flex flex-col w-full items-center bg-gradient-radial from-stone/20 to-stone/0 py-20 px-4">
-      <div className="text-2xl font-bold text-center mx-10">
+      <h5 className="text-2xl font-bold text-center mx-10">
         Facilidad de pago 😎 100% seguro
-      </div>
-      <div className="text-sm font-medium text-center mt-1">
+      </h5>
+      <span className="text-sm font-medium text-center mt-1">
         lista de formas de pago disponibles
-      </div>
+      </span>
       <div className="flex flex-wrap mt-12 max-w-3xl items-center justify-center">
         <div className="py-4 px-4">
           <Image src={paypalLogo} alt="Paypal logo" />
