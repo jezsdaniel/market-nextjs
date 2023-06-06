@@ -5,7 +5,7 @@ import { FacebookIcon, InstagramIcon } from '@/components/icons';
 
 export const StoreFooter = () => {
   return (
-    <footer className="flex flex-col lg:flex-row-reverse w-full items-center space-y-8 lg:space-y-0 px-6 border-t border-neutral-200 lg:px-16 lg:px-24 pt-6 lg:pt-8 pb-12 lg:pb-14">
+    <footer className="flex flex-col lg:flex-row-reverse w-full items-center space-y-8 lg:space-y-0 px-6 border-t border-neutral-200 lg:px-24 pt-6 lg:pt-8 pb-12 lg:pb-14">
       <div className="flex flex-row items-center space-x-2">
         <FacebookIcon />
         <InstagramIcon />
