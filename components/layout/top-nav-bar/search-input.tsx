@@ -12,7 +12,7 @@ export const SearchInput = () => {
         defaultValue={''}
       />
       <button
-        className="h-full px-6 rounded-full bg-stone hover:bg-slate text-neutral-50 text-lg font-semibold"
+        className="h-full px-6 rounded-full bg-stone hover:bg-neutral-700 text-neutral-50 text-lg font-semibold"
         type="button"
       >
         Buscar

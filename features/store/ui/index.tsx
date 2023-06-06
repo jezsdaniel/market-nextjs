@@ -1,9 +1,12 @@
 import React from 'react';
 
-import { StoreHomeBanner } from './banners/home-banner';
-import { StoreStats } from './banners/stats';
+import {
+  StoreHomeBanner,
+  StoreStats,
+  StoreSecondBanner,
+  PaymentMethodsBanner,
+} from './banners';
 import { ProductsCarousel } from './carousel';
-import { StoreSecondBanner } from './banners/second-banner';
 
 import sampleFood1 from 'public/img/samples/sample-food-1.png';
 import sampleFood2 from 'public/img/samples/sample-food-2.png';
@@ -129,6 +132,7 @@ export const StoreUI = () => {
           },
         ]}
       />
+      <PaymentMethodsBanner />
     </div>
   );
 };
