@@ -1,3 +1,4 @@
+export * from './contact-banner';
 export * from './home-banner';
 export * from './payment-methods-banner';
 export * from './second-banner';

@@ -5,6 +5,7 @@ import {
   StoreStats,
   StoreSecondBanner,
   PaymentMethodsBanner,
+  ContactBanner,
 } from './banners';
 import { ProductsCarousel } from './carousel';
 
@@ -133,6 +134,7 @@ export const StoreUI = () => {
         ]}
       />
       <PaymentMethodsBanner />
+      <ContactBanner />
     </div>
   );
 };
