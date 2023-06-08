@@ -45,7 +45,10 @@ module.exports = {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-      }
+      },
+      borderRadius: {
+        '4xl': '2rem',
+      },
     },
   },
   plugins: [

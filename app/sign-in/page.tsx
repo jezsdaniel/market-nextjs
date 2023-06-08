@@ -1,7 +1,9 @@
 import React from 'react';
 
+import { SignInUI } from '@/features/auth/ui/sign-in';
+
 const SignInPage = () => {
-  return <div>SignInPage</div>;
+  return <SignInUI />;
 };
 
 export default SignInPage;
