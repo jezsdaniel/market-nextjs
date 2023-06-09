@@ -7,7 +7,9 @@ const StoreLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="flex flex-col items-center">
       <TopNavBar />
-      <Suspense>{children}</Suspense>
+      <Suspense>
+        <main>{children}</main>
+      </Suspense>
       <StoreBottom />
     </div>
   );
