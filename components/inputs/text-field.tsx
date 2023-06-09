@@ -5,18 +5,20 @@ import { twMerge } from 'tailwind-merge';
 interface TextFieldProps {
   className?: string;
   label?: string;
+  type?: string;
   leadingIcon?: React.ReactNode;
 }
 
 export const TextField: React.FC<TextFieldProps> = ({
   className,
   label,
+  type,
   leadingIcon,
 }) => {
   return (
     <div className={twMerge('relative flex z-0 bg-neutral-150 rounded-full ', className)}>
       <input
-        type="text"
+        type={type ?? 'text'}
         id="floating_filled"
         className={`block rounded-full ${label ? 'pt-6' : 'pt-4'} ${
           label ? 'pb-1.5' : 'pb-3.5'
@@ -36,7 +38,7 @@ export const TextField: React.FC<TextFieldProps> = ({
         </label>
       )}
       {leadingIcon && (
-        <div className="absolute w-6 h-6 left-4 top-0 bottom-0 my-auto text-neutral-500 peer-focus:text-amber">
+        <div className="absolute w-6 h-6 left-4 top-0 bottom-0 my-auto text-neutral-700 peer-focus:text-amber">
           {leadingIcon}
         </div>
       )}
