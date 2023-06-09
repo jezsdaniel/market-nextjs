@@ -11,7 +11,7 @@ export const SignInUI = () => {
       <h3 className="text-3xl font-bold text-slate">Iniciar sesión</h3>
       <p className="font-medium text-neutral-600 leading-5 mt-2">
         Accede a tu cuenta en FRESS Market. Si aún no has creado una puedes{' '}
-        <Link href="/" className="font-semibold text-amber hover:underline">
+        <Link href="/sign-up" className="font-semibold text-amber hover:underline">
           crearla aquí
         </Link>
       </p>
