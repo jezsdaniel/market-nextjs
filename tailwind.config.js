@@ -22,6 +22,7 @@ module.exports = {
         neutral: {
           50: '#FFFFFF',
           100: '#FAFAFA',
+          150: '#F5F5F5',
           200: '#E5E5E5',
           300: '#CCCCCC',
           500: '#999999',
@@ -45,7 +46,10 @@ module.exports = {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-      }
+      },
+      borderRadius: {
+        '4xl': '2rem',
+      },
     },
   },
   plugins: [
