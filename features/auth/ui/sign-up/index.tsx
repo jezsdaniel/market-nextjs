@@ -28,7 +28,7 @@ export const SignUpUI = () => {
       />
       <TextField
         className="w-full mt-4"
-        label="Contraseña"
+        label="Repetir Contraseña"
         leadingIcon={<UilPadlock size={24} />}
         type="password"
       />

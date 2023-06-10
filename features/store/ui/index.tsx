@@ -6,8 +6,8 @@ import {
   StoreSecondBanner,
   PaymentMethodsBanner,
   ContactBanner,
-} from './banners';
-import { ProductsCarousel } from './carousel';
+} from '../components/banners';
+import { ProductsCarousel } from '../components/carousel';
 
 import sampleFood1 from 'public/img/samples/sample-food-1.png';
 import sampleFood2 from 'public/img/samples/sample-food-2.png';
