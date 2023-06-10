@@ -5,7 +5,6 @@ import {
   StoreStats,
   StoreSecondBanner,
   PaymentMethodsBanner,
-  ContactBanner,
 } from '../components/banners';
 import { ProductsCarousel } from '../components/carousel';
 
@@ -17,7 +16,7 @@ import sampleFood5 from 'public/img/samples/sample-food-5.png';
 
 export const StoreUI = () => {
   return (
-    <div className="flex flex-col items-center w-full">
+    <>
       <StoreHomeBanner />
       <StoreStats />
       <ProductsCarousel
@@ -134,7 +133,6 @@ export const StoreUI = () => {
         ]}
       />
       <PaymentMethodsBanner />
-      <ContactBanner />
-    </div>
+    </>
   );
 };
