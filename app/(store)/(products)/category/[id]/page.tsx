@@ -1,7 +1,9 @@
 import React from 'react';
 
+import { CategoryUI } from '@/features/store/ui/category';
+
 const StoreCategoryPage = () => {
-  return <></>;
+  return <CategoryUI />;
 };
 
 export default StoreCategoryPage;

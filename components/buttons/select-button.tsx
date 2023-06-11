@@ -16,14 +16,11 @@ export const SelectButton: React.FC<SelectButtonProps> = ({
   className,
 }) => {
   return (
-    <div className="w-full relative inline-flex">
+    <div className={twMerge('w-full relative inline-flex', className)}>
       <button
-        className={twMerge(
-          `flex flex-row items-center justify-center px-8 rounded-full w-full h-12 bg-neutral-150 hover:bg-neutral-200 text-base font-medium text-neutral-900 ${
-            selectedItem ? '' : 'italic'
-          }`,
-          className,
-        )}
+        className={`flex flex-row items-center justify-center px-8 rounded-full w-full h-12 bg-neutral-150 hover:bg-neutral-200 text-base font-medium text-neutral-900 ${
+          selectedItem ? '' : 'italic'
+        }`}
       >
         {selectedItem ? selectedItem.value : 'Seleccione una opción'}
         <UilAngleDown className="ml-1" size={24} />
