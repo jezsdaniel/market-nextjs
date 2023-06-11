@@ -29,6 +29,7 @@ export const CategoryUI = () => {
         ]}
       />
       <div className="flex flex-row py-6 px-4 w-full max-w-7xl">
+        <div className="hidden lg:flex min-w-[300px]"></div>
         <ProductsListContainer />
       </div>
       <StoreSecondBanner />
