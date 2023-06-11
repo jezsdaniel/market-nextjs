@@ -1,9 +1,10 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import { Dialog } from '@headlessui/react';
-import { UilAngleDown } from '@iconscout/react-unicons';
 
 import { AppDialog } from '@/components/dialog';
-import { ColorButton } from '@/components/buttons';
+import { ColorButton, SelectButton } from '@/components/buttons';
 
 interface LocationSelectorDialogProps {
   isOpen: boolean;
@@ -14,6 +15,11 @@ export const LocationSelectorDialog: React.FC<LocationSelectorDialogProps> = ({
   isOpen,
   closeDialog,
 }) => {
+  const [selectedProvince, setSelectedProvince] = useState<{
+    value: string;
+    text: string;
+  } | null>(null);
+
   return (
     <AppDialog isOpen={isOpen} closeDialog={closeDialog}>
       <Dialog.Title as="h3" className="text-2xl font-bold">
@@ -26,11 +32,33 @@ export const LocationSelectorDialog: React.FC<LocationSelectorDialogProps> = ({
         </p>
       </div>
       <div className="flex flex-col mt-6 space-y-6">
-        <ColorButton
-          text="La Habana"
-          className="w-full h-12 bg-neutral-150 hover:bg-neutral-200 text-base font-medium text-neutral-900"
-          trailing={<UilAngleDown className="ml-1" size={24} />}
-          onClick={closeDialog}
+        <SelectButton
+          items={[
+            {
+              value: 'Pinar del Río',
+              text: 'Pinar del Río',
+            },
+            {
+              value: 'Artemisa',
+              text: 'Artemisa',
+            },
+            {
+              value: 'La Habana',
+              text: 'La Habana',
+            },
+            {
+              value: 'Mayabeque',
+              text: 'Mayabeque',
+            },
+            {
+              value: 'Matanzas',
+              text: 'Matanzas',
+            },
+          ]}
+          selectedItem={selectedProvince}
+          onChange={(value) => {
+            setSelectedProvince({ value, text: value });
+          }}
         />
         <ColorButton
           text="Visitar tienda"
