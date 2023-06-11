@@ -33,6 +33,7 @@ export const LocationSelectorDialog: React.FC<LocationSelectorDialogProps> = ({
       </div>
       <div className="flex flex-col mt-6 space-y-6">
         <SelectButton
+          className="w-full"
           items={[
             {
               value: 'Pinar del Río',

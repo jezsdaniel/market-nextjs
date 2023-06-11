@@ -1,9 +1,12 @@
 import React from 'react';
+import { twMerge } from 'tailwind-merge';
 
 interface IconButtonProps {
   icon: React.ReactNode;
   label?: string;
-  badgeText?: number;
+  badgeText?: string;
+  onClick?: () => void;
+  disabled?: boolean;
   className?: string;
 }
 
@@ -11,12 +14,19 @@ export const IconButton: React.FC<IconButtonProps> = ({
   icon,
   label,
   badgeText,
+  onClick,
+  disabled,
   className,
 }) => {
   return (
     <button
       type="button"
-      className="flex relative items-center justify-center w-10 h-10 rounded-full fill-neutral-700 hover:bg-neutral-200"
+      onClick={onClick}
+      disabled={disabled}
+      className={twMerge(
+        'flex relative items-center justify-center w-10 h-10 rounded-full text-neutral-700 disabled:text-neutral-300 enabled:hover:bg-neutral-200',
+        className,
+      )}
     >
       {icon}
       {label && <span className="sr-only">{label}</span>}

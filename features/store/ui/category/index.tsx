@@ -1,8 +1,10 @@
 import React from 'react';
 
 import { Breadcrums } from '@/components/breadcrums';
+
 import { StoreSecondBanner } from '../../components/banners';
 import { ProductsCarousel } from '../../components/carousel';
+import { ProductsListContainer } from './products-list-container';
 
 import sampleFood1 from 'public/img/samples/sample-food-1.png';
 import sampleFood2 from 'public/img/samples/sample-food-2.png';
@@ -26,6 +28,9 @@ export const CategoryUI = () => {
           },
         ]}
       />
+      <div className="flex flex-row py-6 px-4 w-full max-w-7xl">
+        <ProductsListContainer />
+      </div>
       <StoreSecondBanner />
       <ProductsCarousel
         title="🤩 Nuevas ofertas"

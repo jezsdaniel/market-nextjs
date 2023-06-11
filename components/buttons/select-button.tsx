@@ -7,6 +7,7 @@ interface SelectButtonProps {
   selectedItem: { value: string; text: string } | null;
   onChange?: (value: string) => void;
   className?: string;
+  buttonClassName?: string;
 }
 
 export const SelectButton: React.FC<SelectButtonProps> = ({
@@ -14,13 +15,17 @@ export const SelectButton: React.FC<SelectButtonProps> = ({
   selectedItem,
   onChange,
   className,
+  buttonClassName,
 }) => {
   return (
-    <div className={twMerge('w-full relative inline-flex', className)}>
+    <div className={twMerge('relative inline-flex', className)}>
       <button
-        className={`flex flex-row items-center justify-center px-8 rounded-full w-full h-12 bg-neutral-150 hover:bg-neutral-200 text-base font-medium text-neutral-900 ${
-          selectedItem ? '' : 'italic'
-        }`}
+        className={twMerge(
+          `flex flex-row items-center justify-center px-4 rounded-full w-full h-12 bg-neutral-150 hover:bg-neutral-200 text-base font-medium text-neutral-900 ${
+            selectedItem ? '' : 'italic'
+          }`,
+          buttonClassName,
+        )}
       >
         {selectedItem ? selectedItem.value : 'Seleccione una opción'}
         <UilAngleDown className="ml-1" size={24} />
@@ -30,7 +35,11 @@ export const SelectButton: React.FC<SelectButtonProps> = ({
         onChange={(e) => onChange && onChange(e.target.value)}
       >
         {items.map((item, index) => (
-          <option key={index} value={item.value}>
+          <option
+            key={index}
+            value={item.value}
+            selected={selectedItem?.value === item.value}
+          >
             {item.text}
           </option>
         ))}
