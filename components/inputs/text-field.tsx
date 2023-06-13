@@ -6,6 +6,7 @@ interface TextFieldProps {
   className?: string;
   label?: string;
   type?: string;
+  value?: string;
   leadingIcon?: React.ReactNode;
 }
 
@@ -14,6 +15,7 @@ export const TextField: React.FC<TextFieldProps> = ({
   label,
   type,
   leadingIcon,
+  value
 }) => {
   return (
     <div className={twMerge('relative flex z-0 bg-neutral-150 rounded-full ', className)}>
@@ -26,6 +28,7 @@ export const TextField: React.FC<TextFieldProps> = ({
           leadingIcon ? 'pl-12' : 'pl-6'
         } w-full font-medium bg-transparent border appearance-none border-neutral-300 focus:border-amber placeholder-shown:border-neutral-150 focus:outline-none focus:ring-0 peer`}
         placeholder=" "
+        value={value}
       />
       {label && (
         <label
