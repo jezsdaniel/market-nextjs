@@ -6,6 +6,7 @@ import Link from 'next/link';
 
 import { IProductMock } from '../../models/i-product-mock';
 import { ProductsCarouselItem } from './item';
+import { IconButton } from '@/components/buttons';
 
 interface ProductsCarouselProps {
   title: string;
@@ -72,28 +73,22 @@ export const ProductsCarousel: React.FC<ProductsCarouselProps> = ({
               ver más
             </Link>
           )}
-          <button
+          <IconButton
+            icon={<UilCornerUpRightAlt className="rotate-180" size={32} />}
             onClick={() => scroll(-350)}
             disabled={!prevEnabled}
-            className="flex relative items-center justify-center w-10 h-10 rounded-full enabled:hover:bg-neutral-200 group"
-          >
-            <UilCornerUpRightAlt
-              className="fill-neutral-700 group-disabled:fill-neutral-300 rotate-180"
-              size={32}
-            />
-            <span className="sr-only">Anteriores</span>
-          </button>
-          <button
+            label="Anteriores"
+          />
+          <IconButton
+            icon={
+              <UilCornerUpRightAlt
+                size={32}
+              />
+            }
             onClick={() => scroll(350)}
             disabled={!nextEnabled}
-            className="flex relative items-center justify-center w-10 h-10 rounded-full enabled:hover:bg-neutral-200 group"
-          >
-            <UilCornerUpRightAlt
-              className="fill-neutral-700 group-disabled:fill-neutral-300"
-              size={32}
-            />
-            <span className="sr-only">Siguientes</span>
-          </button>
+            label="Siguientes"
+          />
         </div>
       </div>
       <div

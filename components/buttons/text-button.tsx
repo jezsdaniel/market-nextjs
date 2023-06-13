@@ -1,7 +1,7 @@
 import React from 'react';
 import { twMerge } from 'tailwind-merge';
 
-interface ColorButtonProps {
+interface TextButtonProps {
   text: string;
   leading?: React.ReactNode;
   trailing?: React.ReactNode;
@@ -9,7 +9,7 @@ interface ColorButtonProps {
   className?: string;
 }
 
-export const ColorButton: React.FC<ColorButtonProps> = ({
+export const TextButton: React.FC<TextButtonProps> = ({
   text,
   leading,
   trailing,
@@ -19,7 +19,7 @@ export const ColorButton: React.FC<ColorButtonProps> = ({
   return (
     <button
       className={twMerge(
-        'flex flex-row items-center justify-center h-14 px-8 rounded-full cursor-pointer bg-stone hover:bg-neutral-900 text-neutral-50 text-lg font-semibold',
+        'flex flex-row items-center justify-center h-14 px-8 rounded-full cursor-pointer hover:bg-neutral-200 text-amber text-lg font-semibold',
         className,
       )}
       onClick={onClick}

@@ -6,6 +6,8 @@ import { Dialog } from '@headlessui/react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { UilAngleDown, UilAlignLeft, UilTimes } from '@iconscout/react-unicons';
 
+import { IconButton } from '@/components/buttons';
+
 import { LocationSelector } from './location-selector';
 
 export const MobileMenu = () => {
@@ -23,16 +25,13 @@ export const MobileMenu = () => {
 
   return (
     <>
-      <button
-        type="button"
+      <IconButton
         onClick={() => {
           setMobileMenuIsOpen(!mobileMenuIsOpen);
         }}
-        aria-label="Abrir menú"
-        className="flex relative items-center justify-center w-10 h-10 rounded-full hover:bg-neutral-200"
-      >
-        <UilAlignLeft className="fill-neutral-700" size={24} />
-      </button>
+        label="Abrir menú"
+        icon={<UilAlignLeft className="fill-neutral-700" size={24} />}
+      />
       <AnimatePresence initial={false}>
         {mobileMenuIsOpen && (
           <Dialog
@@ -88,17 +87,26 @@ export const MobileMenu = () => {
                       </div>
                     </li>
                     <li>
-                      <Link className="font-medium flex flex-row items-center space-x-1 cursor-pointer hover:bg-neutral-200 rounded-full  px-4 py-2" href="/">
+                      <Link
+                        className="font-medium flex flex-row items-center space-x-1 cursor-pointer hover:bg-neutral-200 rounded-full  px-4 py-2"
+                        href="/"
+                      >
                         Bonos FRESS
                       </Link>
                     </li>
                     <li>
-                      <Link className="font-medium flex flex-row items-center space-x-1 cursor-pointer hover:bg-neutral-200 rounded-full  px-4 py-2" href="/">
+                      <Link
+                        className="font-medium flex flex-row items-center space-x-1 cursor-pointer hover:bg-neutral-200 rounded-full  px-4 py-2"
+                        href="/"
+                      >
                         ¿Cómo funciona?
                       </Link>
                     </li>
                     <li>
-                      <Link className="font-medium flex flex-row items-center space-x-1 cursor-pointer hover:bg-neutral-200 rounded-full  px-4 py-2" href="/">
+                      <Link
+                        className="font-medium flex flex-row items-center space-x-1 cursor-pointer hover:bg-neutral-200 rounded-full  px-4 py-2"
+                        href="/"
+                      >
                         Sobre nosotros
                       </Link>
                     </li>

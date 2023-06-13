@@ -15,7 +15,7 @@ const AuthLayout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <Suspense>
-      <main>
+      <main className="w-full">
         <div className="flex flex-row bg-stone min-h-screen">
           <div className="hidden lg:block relative grow">
             <Image
@@ -37,7 +37,7 @@ const AuthLayout = ({ children }: { children: React.ReactNode }) => {
                 placeholder="blur"
               />
               <div className="flex flex-col items-start w-full sm:w-[480px] bg-neutral-50 rounded-3xl lg:rounded-4xl shadow-xl lg:-ml-48 lg:z-10 p-8 lg:p-14">
-                {children}
+                <Suspense>{children}</Suspense>
               </div>
             </div>
           </Link>
