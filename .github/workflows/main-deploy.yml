@@ -33,8 +33,12 @@ jobs:
         run: |
           git config user.name "jezsdaniel"
           git config user.email "jadendaniel7@gmail.com"
-          git checkout deploy origin/deploy
           git add build.zip
           git commit -m "Add build ZIP"
-          git push origin deploy
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: deploy
 
