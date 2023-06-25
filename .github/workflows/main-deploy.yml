@@ -31,6 +31,8 @@ jobs:
 
       - name: Create branch
         run: |
+          git config user.name "jezsdaniel"
+          git config user.email "jadendaniel7@gmail.com"
           git checkout -b deploy
           git add build.zip
           git commit -m "Add build ZIP"
