@@ -29,18 +29,11 @@ jobs:
       - name: Zip build folder
         run: zip -r build.zip .
 
-      - name: Checkout
-        run: git checkout -b deploy
-
-      - name: Commit and push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: deploy
-
-      - name: Upload ZIP to branch
-        uses: actions/upload-artifact@v2
-        with:
-          name: build
-          path: build.zip
+      - name: Create branch
+        run: |
+          git checkout -b deploy
+          mv build.zip ./build.zip
+          git add build.zip
+          git commit -m "Add build ZIP"
+          git push origin deploy
 
