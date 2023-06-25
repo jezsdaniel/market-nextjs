@@ -36,5 +36,5 @@ jobs:
           git checkout -b deploy
           git add build.zip
           git commit -m "Add build ZIP"
-          git push origin deploy
+          git push origin HEAD:deploy
 
