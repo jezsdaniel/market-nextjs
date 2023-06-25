@@ -32,7 +32,6 @@ jobs:
       - name: Create branch
         run: |
           git checkout -b deploy
-          mv build.zip ./build.zip
           git add build.zip
           git commit -m "Add build ZIP"
           git push origin deploy
