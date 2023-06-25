@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-import { IProductMock } from '@/features/store/models/i-product-mock';
+import { IProductMock } from '@/features/products/models/i-product-mock';
 
 interface ProductsListItemProps {
   product: IProductMock;

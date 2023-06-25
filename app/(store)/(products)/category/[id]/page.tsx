@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { CategoryUI } from '@/features/store/ui/category';
+import { CategoryUI } from '@/features/products/ui/category';
 
 const StoreCategoryPage = () => {
   return <CategoryUI />;
