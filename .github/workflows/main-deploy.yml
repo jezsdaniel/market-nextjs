@@ -33,7 +33,7 @@ jobs:
         run: |
           git config user.name "jezsdaniel"
           git config user.email "jadendaniel7@gmail.com"
-          git pull deploy
+          git pull origin deploy
           git add build.zip
           git commit -m "Add build ZIP"
 
