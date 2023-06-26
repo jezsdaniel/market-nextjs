@@ -34,7 +34,7 @@ jobs:
           git config user.name "jezsdaniel"
           git config user.email "jadendaniel7@gmail.com"
           git config pull.rebase false
-          git pull origin deploy
+          git pull origin deploy --allow-unrelated-histories
           git add build.zip
           git commit -m "Add build ZIP"
 
