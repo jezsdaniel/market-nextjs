@@ -68,7 +68,7 @@ export const ProductsCarousel: React.FC<ProductsCarouselProps> = ({
           {showMore && (
             <Link
               className="text-base font-semibold text-amber hover:underline mx-6"
-              href="/"
+              href="/category/test"
             >
               ver más
             </Link>
@@ -102,7 +102,7 @@ export const ProductsCarousel: React.FC<ProductsCarouselProps> = ({
       {showMore && (
         <Link
           className="block md:hidden self-end text-base font-semibold text-amber hover:underline mx-6 -mt-2 mb-4"
-          href="/"
+          href="/category/test"
         >
           ver más
         </Link>
