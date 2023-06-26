@@ -1,24 +1,32 @@
+'use client'
+
 import React from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
-import { IProductMock } from '../../models/i-product-mock';
+import { IProductMock } from '@/features/products/models/i-product-mock';
 
-interface ProductsCarouselItemProps {
+interface ProductsListItemProps {
   product: IProductMock;
 }
 
-export const ProductsCarouselItem: React.FC<ProductsCarouselItemProps> = ({
-  product,
-}) => {
+export const ProductsListItem: React.FC<ProductsListItemProps> = ({ product }) => {
+  const router = useRouter();
+
   return (
-    <div className="relative flex flex-col min-w-[163px] w-[163px] md:min-w-[272px] md:w-[272px] rounded-2xl md:hover:cursor-pointer md:hover:bg-gray-50 md:hover:drop-shadow-xl md:p-6">
+    <button
+      onClick={() => {
+        router.push(`/product/test`);
+      }}
+      className="relative flex flex-col min-w-full w-full rounded-2xl md:hover:cursor-pointer md:hover:bg-gray-50 md:hover:drop-shadow-xl md:p-4 text-start"
+    >
       {product.isNew && (
         <div className="absolute flex items-center justify-center text-[11px] leading-3 font-semibold text-neutral-50 bg-amber rounded-full -top-1 -right-1 md:top-3 md:right-3 px-2 py-1">
           nuevo
         </div>
       )}
       <Image
-        className="h-[163px] md:h-[224px] w-full rounded-md object-cover object-center"
+        className="w-full aspect-square rounded-md object-cover object-center"
         src={product.image}
         alt="Combo 1"
         placeholder="blur"
@@ -36,9 +44,9 @@ export const ProductsCarouselItem: React.FC<ProductsCarouselItemProps> = ({
             : product.price.toFixed(2)}
         </span>
       </div>
-      <p className="text-sm md:text-base leading-4 md:leading-5 font-medium line-clamp-2 mt-2">
+      <p className="text-sm leading-4 font-medium line-clamp-2 mt-2">
         Nombre del combo de dos líneas de texto
       </p>
-    </div>
+    </button>
   );
 };

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { StoreUI } from '@/features/store/ui';
+import { ProductsStoreUI } from '@/features/products/ui';
 
 const StorePage = () => {
-  return <StoreUI />;
+  return <ProductsStoreUI />;
 };
 
 export default StorePage;

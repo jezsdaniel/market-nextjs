@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 
-import { ContactBanner } from '@/features/store/components/banners';
+import { ContactBanner } from '@/features/products/components/banners';
 
 const StoreProductsLayout = ({ children }: { children: React.ReactNode }) => {
   return (

@@ -2,19 +2,24 @@
 
 import React from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { UilUserSquare, UilShoppingCart } from '@iconscout/react-unicons';
 import { Menu, Transition } from '@headlessui/react';
+
 import { IconButton } from '@/components/buttons';
 
 export const NavBarActions = () => {
+  const router = useRouter();
+
   return (
     <div className="flex flex-row items-center space-x-2 lg:space-x-6">
       <IconButton
-        icon={
-          <UilShoppingCart className="fill-neutral-700" size={24} />
-        }
+        icon={<UilShoppingCart className="fill-neutral-700" size={24} />}
         label="Carrito"
         badgeText="00"
+        onClick={() => {
+          router.push('cart');
+        }}
       />
       <div className="hidden sm:flex flex-row items-center space-x-3">
         <UilUserSquare className="fill-neutral-700" size={24} />

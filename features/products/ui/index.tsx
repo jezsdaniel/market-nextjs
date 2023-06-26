@@ -14,7 +14,7 @@ import sampleFood3 from 'public/img/samples/sample-food-3.png';
 import sampleFood4 from 'public/img/samples/sample-food-4.png';
 import sampleFood5 from 'public/img/samples/sample-food-5.png';
 
-export const StoreUI = () => {
+export const ProductsStoreUI = () => {
   return (
     <>
       <StoreHomeBanner />

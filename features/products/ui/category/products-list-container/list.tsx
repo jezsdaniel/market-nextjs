@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { IProductMock } from '@/features/store/models/i-product-mock';
+import { IProductMock } from '@/features/products/models/i-product-mock';
 
 import { ProductsListItem } from './list-item';
 
