@@ -15,8 +15,8 @@ const oswald = localFont({
 });
 
 export const metadata = {
-  title: 'Fress',
-  description: 'Tienda virtual Fress',
+  title: 'Market',
+  description: 'Tienda virtual Market',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

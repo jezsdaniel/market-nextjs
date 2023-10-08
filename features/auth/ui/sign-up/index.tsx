@@ -10,7 +10,7 @@ export const SignUpUI = () => {
     <>
       <h3 className="text-3xl font-bold text-slate">Registrarse</h3>
       <p className="font-medium text-neutral-600 leading-5 mt-2">
-        Cree su cuenta en FRESS Market. Si ya cuenta con un puedes{' '}
+        Cree su cuenta en Market. Si ya cuenta con un puedes{' '}
         <Link href="/sign-in" className="font-semibold text-amber hover:underline">
           acceder desde aquí
         </Link>

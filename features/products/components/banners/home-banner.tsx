@@ -13,7 +13,7 @@ export const StoreHomeBanner = () => {
             Productos siempre
           </h4>
           <h2 className="text-5xl md:text-6xl lg:text-8xl font-bold text-neutral-50 font-display">
-            FRESS
+            DISPONIBLES
           </h2>
           <h4 className="text-2xl md:text-4xl lg:text-6xl font-normal text-neutral-50 font-display">
             para nuestros clientes

@@ -1,15 +1,14 @@
 import React from 'react';
-
 import Image from 'next/image';
 import Link from 'next/link';
 
-import fressLogo from 'public/img/fress.png';
+import marketLogo from 'public/img/logo.svg';
 
 export const StoreBottomBar = () => {
   return (
     <nav className="flex flex-col lg:flex-row w-full items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-14 px-6 lg:px-24 pt-14 pb-10">
-      <Image src={fressLogo} alt="Fress logo" className="w-28 h-28 lg:w-32 lg:h-32"/>
-      <div className="grow"/>
+      <Image src={marketLogo} alt="Market logo" className="w-28 h-28 lg:w-32 lg:h-32" />
+      <div className="grow" />
       <div className="flex flex-col space-y-1 items-center text-center lg:items-start lg:text-start">
         <Link href="/" className="font-medium hover:underline">
           Sobre nosotros
@@ -42,7 +41,7 @@ export const StoreBottomBar = () => {
       <div className="flex flex-col space-y-1 items-center text-center lg:items-start lg:text-start">
         <span className="font-semibold">Otros servicios</span>
         <Link href="/" className="font-medium hover:underline">
-          Bonos FRESS
+          Bonos MARKET
         </Link>
       </div>
     </nav>

@@ -11,7 +11,7 @@ export const NavBarBottom = () => {
           <UilAngleDown size={20} />
         </div>
         <Link className="font-medium hover:underline" href="/">
-          Bonos FRESS
+          Bonos MARKET
         </Link>
       </div>
       <div className="flex flex-row items-center space-x-6">

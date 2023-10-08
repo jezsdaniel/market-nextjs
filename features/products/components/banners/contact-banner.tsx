@@ -21,7 +21,7 @@ export const ContactBanner = () => {
         </div>
         <div className="flex flex-row items-center mt-4">
           <UilEnvelope size={24} className="fill-amber" />
-          <span className="text-amber font-semibold ml-2">fress@gmail.com</span>
+          <span className="text-amber font-semibold ml-2">market@gmail.com</span>
         </div>
         <p className="text-sm text-neutral-600 font-medium mt-6">
           o mediante nuestras redes sociales.

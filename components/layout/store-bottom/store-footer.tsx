@@ -20,7 +20,7 @@ export const StoreFooter = () => {
       </div>
       <div className="grow"/>
       <p className="font-medium text-neutral-550 text-center">
-        Copyright 2023 FRESS Market • Todos los derechos reservados
+        Copyright 2023 Market • Todos los derechos reservados
       </p>
     </footer>
   );
